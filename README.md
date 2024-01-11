@@ -1,7 +1,8 @@
 # Automation
 some automation scripts
 
-migrate_devices :
+**migrate_devices :**
+
 Migrates devices from one organization to another. The script works in 3 stages:
 1. Run the script in export mode to compile device information into a local file
 2. Run the script in unclaim mode to remove devices from their source organization
@@ -69,6 +70,7 @@ Optional parameters:
                             -v both             Process both client and site-to-site config
               
 Example:
+
     1. Export all devices in networks tagged "franchise" into a file using the default
         filename format, from organization "Big Industries Inc":
     python migrate_devices.py -k 1234 -o "Big Industries Inc" -m export -t franchise
